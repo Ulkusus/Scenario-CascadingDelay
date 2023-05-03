@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_EuF2UJAHEe2yOZZgyxNVLg" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_xA2aMJAHEe2yOZZgyxNVLg" entityName="ChainedService">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_G-evIJAIEe2yOZZgyxNVLg" entityName="ChainedService.ICloudbasedService.OperationProvidedRole1" providedInterface__OperationProvidedRole="_MBekYJAHEe2yOZZgyxNVLg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_IXUKUJAIEe2yOZZgyxNVLg" entityName="ChainedService.ICloudbasedService.OperationRequiredRole1" requiredInterface__OperationRequiredRole="_MBekYJAHEe2yOZZgyxNVLg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_G-fWMJAIEe2yOZZgyxNVLg" describedService__SEFF="_gIeu4JAHEe2yOZZgyxNVLg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_G-fWMZAIEe2yOZZgyxNVLg" successor_AbstractAction="_QsqEoJAIEe2yOZZgyxNVLg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_G-fWMpAIEe2yOZZgyxNVLg" predecessor_AbstractAction="_TECLsJAIEe2yOZZgyxNVLg"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_QsqEoJAIEe2yOZZgyxNVLg" entityName="InternalAction1" predecessor_AbstractAction="_G-fWMZAIEe2yOZZgyxNVLg" successor_AbstractAction="_TECLsJAIEe2yOZZgyxNVLg">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="30"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_TECLsJAIEe2yOZZgyxNVLg" entityName="ExternalCallAction1" predecessor_AbstractAction="_QsqEoJAIEe2yOZZgyxNVLg" successor_AbstractAction="_G-fWMpAIEe2yOZZgyxNVLg" calledService_ExternalService="_gIeu4JAHEe2yOZZgyxNVLg" role_ExternalService="_IXUKUJAIEe2yOZZgyxNVLg"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_xZWZwJAHEe2yOZZgyxNVLg" entityName="FinalService">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FhGLIJAIEe2yOZZgyxNVLg" entityName="FinalService.ICloudbasedService.OperationProvidedRole1" providedInterface__OperationProvidedRole="_MBekYJAHEe2yOZZgyxNVLg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_FhRKQJAIEe2yOZZgyxNVLg" describedService__SEFF="_gIeu4JAHEe2yOZZgyxNVLg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_FhRKQZAIEe2yOZZgyxNVLg" successor_AbstractAction="_La1lsJAIEe2yOZZgyxNVLg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_FhRKQpAIEe2yOZZgyxNVLg" predecessor_AbstractAction="_La1lsJAIEe2yOZZgyxNVLg"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_La1lsJAIEe2yOZZgyxNVLg" entityName="InternalAction1" predecessor_AbstractAction="_FhRKQZAIEe2yOZZgyxNVLg" successor_AbstractAction="_FhRKQpAIEe2yOZZgyxNVLg">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="30"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_MBekYJAHEe2yOZZgyxNVLg" entityName="ICloudbasedService">
+    <signatures__OperationInterface id="_gIeu4JAHEe2yOZZgyxNVLg" entityName="processRequest"/>
+  </interfaces__Repository>
+</repository:Repository>

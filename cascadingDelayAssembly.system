@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_sn_1sJAqEe2yOZZgyxNVLg" entityName="New System">
+  <assemblyContexts__ComposedStructure id="_PhBqEJArEe2yOZZgyxNVLg" entityName="Assembly_ChainedService1">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="cascadingDelayRepository.repository#_xA2aMJAHEe2yOZZgyxNVLg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_QgI9sJArEe2yOZZgyxNVLg" entityName="Assembly_ChainedService2">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="cascadingDelayRepository.repository#_xA2aMJAHEe2yOZZgyxNVLg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Rq3EYJArEe2yOZZgyxNVLg" entityName="Assembly_FinalService">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="cascadingDelayRepository.repository#_xZWZwJAHEe2yOZZgyxNVLg"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_UIJJsJAsEe2yOZZgyxNVLg" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_LMAKkJArEe2yOZZgyxNVLg" assemblyContext_ProvidedDelegationConnector="_PhBqEJArEe2yOZZgyxNVLg">
+    <innerProvidedRole_ProvidedDelegationConnector href="cascadingDelayRepository.repository#_G-evIJAIEe2yOZZgyxNVLg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_U8jCIJAsEe2yOZZgyxNVLg" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_PhBqEJArEe2yOZZgyxNVLg" providingAssemblyContext_AssemblyConnector="_QgI9sJArEe2yOZZgyxNVLg">
+    <providedRole_AssemblyConnector href="cascadingDelayRepository.repository#_G-evIJAIEe2yOZZgyxNVLg"/>
+    <requiredRole_AssemblyConnector href="cascadingDelayRepository.repository#_IXUKUJAIEe2yOZZgyxNVLg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_VsG20JAsEe2yOZZgyxNVLg" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_QgI9sJArEe2yOZZgyxNVLg" providingAssemblyContext_AssemblyConnector="_Rq3EYJArEe2yOZZgyxNVLg">
+    <providedRole_AssemblyConnector href="cascadingDelayRepository.repository#_FhGLIJAIEe2yOZZgyxNVLg"/>
+    <requiredRole_AssemblyConnector href="cascadingDelayRepository.repository#_IXUKUJAIEe2yOZZgyxNVLg"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_LMAKkJArEe2yOZZgyxNVLg" entityName="ICloudbasedServiceProvidedRole">
+    <providedInterface__OperationProvidedRole href="cascadingDelayRepository.repository#_MBekYJAHEe2yOZZgyxNVLg"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

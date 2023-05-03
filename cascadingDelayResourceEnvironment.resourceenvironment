@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="New ResourceEnvironment">
+  <linkingResources__ResourceEnvironment id="_EZr3UJAtEe2yOZZgyxNVLg" entityName="VirtualCenterLan" connectedResourceContainers_LinkingResource="_jG_HkJAsEe2yOZZgyxNVLg _jgGLIJAsEe2yOZZgyxNVLg _joEbYJAsEe2yOZZgyxNVLg">
+    <communicationLinkResourceSpecifications_LinkingResource id="_EZseYJAtEe2yOZZgyxNVLg">
+      <latency_CommunicationLinkResourceSpecification specification="0"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1000000"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_jG_HkJAsEe2yOZZgyxNVLg" entityName="ResourceContainer1">
+    <activeResourceSpecifications_ResourceContainer id="_kHT8IJAsEe2yOZZgyxNVLg">
+      <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#ProcessorSharing"/>
+      <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+      <processingRate_ProcessingResourceSpecification specification="100"/>
+    </activeResourceSpecifications_ResourceContainer>
+  </resourceContainer_ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_jgGLIJAsEe2yOZZgyxNVLg" entityName="ResourceContainer2">
+    <activeResourceSpecifications_ResourceContainer id="_lF2oAJAsEe2yOZZgyxNVLg">
+      <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#ProcessorSharing"/>
+      <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+      <processingRate_ProcessingResourceSpecification specification="100"/>
+    </activeResourceSpecifications_ResourceContainer>
+  </resourceContainer_ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_joEbYJAsEe2yOZZgyxNVLg" entityName="FinalContainer">
+    <activeResourceSpecifications_ResourceContainer id="_l5frcJAsEe2yOZZgyxNVLg">
+      <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#ProcessorSharing"/>
+      <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+      <processingRate_ProcessingResourceSpecification specification="100"/>
+    </activeResourceSpecifications_ResourceContainer>
+  </resourceContainer_ResourceEnvironment>
+</resourceenvironment:ResourceEnvironment>

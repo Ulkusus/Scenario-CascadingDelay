@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_wtQwAJAsEe2yOZZgyxNVLg" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="cascadingDelayResourceEnvironment.resourceenvironment#/"/>
+  <system_Allocation href="cascadingDelayAssembly.system#_sn_1sJAqEe2yOZZgyxNVLg"/>
+  <allocationContexts_Allocation id="_5RkTYJAsEe2yOZZgyxNVLg" entityName="Allocation_Assembly_ChainedService1">
+    <resourceContainer_AllocationContext href="cascadingDelayResourceEnvironment.resourceenvironment#_jG_HkJAsEe2yOZZgyxNVLg"/>
+    <assemblyContext_AllocationContext href="cascadingDelayAssembly.system#_PhBqEJArEe2yOZZgyxNVLg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_53z0AJAsEe2yOZZgyxNVLg" entityName="Allocation_Assembly_FinalService">
+    <resourceContainer_AllocationContext href="cascadingDelayResourceEnvironment.resourceenvironment#_joEbYJAsEe2yOZZgyxNVLg"/>
+    <assemblyContext_AllocationContext href="cascadingDelayAssembly.system#_Rq3EYJArEe2yOZZgyxNVLg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_7IQvQJAsEe2yOZZgyxNVLg" entityName="Allocation_Assembly_ChainedService2">
+    <resourceContainer_AllocationContext href="cascadingDelayResourceEnvironment.resourceenvironment#_jgGLIJAsEe2yOZZgyxNVLg"/>
+    <assemblyContext_AllocationContext href="cascadingDelayAssembly.system#_QgI9sJArEe2yOZZgyxNVLg"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>
